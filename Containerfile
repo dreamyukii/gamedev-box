@@ -11,6 +11,6 @@ COPY sigil_lib /
 # install package
 RUN apt-get update && \ 
     apt-get upgrade -y && \
-    DEBIAN_FRONTEND=noninteractive apt-get -y install zsh build-essential git cmake libglew-dev libopenal-dev  
+    DEBIAN_FRONTEND=noninteractive apt-get -y install codeblocks zsh build-essential git cmake libglew-dev libopenal-dev  
 
 RUN rm -rf /tmp/* 
